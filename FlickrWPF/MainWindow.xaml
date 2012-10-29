@@ -1,0 +1,12 @@
+﻿<Window x:Class="FlickrWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FlickrSync" Height="350" Width="525" Initialized="Window_Initialized" Closed="Window_Closed">
+    <Grid>
+        <TextBox Height="194" HorizontalAlignment="Left" Margin="17,85,0,0" Name="LogWindow" VerticalAlignment="Top" Width="457" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" DataContext="{Binding}" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" />
+        <Label Content="Main Folder to search" Height="28" HorizontalAlignment="Left" Margin="17,24,0,0" Name="label1" VerticalAlignment="Top" Target="{Binding}" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="132,27,0,0" Name="rootFolder" VerticalAlignment="Top" Width="120" Text="Bilder" DataContext="{Binding}" />
+        <Label Content="LogOutput" Height="28" HorizontalAlignment="Left" Margin="14,59,0,0" Name="label2" VerticalAlignment="Top" />
+        <Button Content="GO" Height="23" HorizontalAlignment="Left" Margin="399,26,0,0" Name="StartButton" VerticalAlignment="Top" Width="75" Click="button1_Click" IsDefault="True" />
+    </Grid>
+</Window>
